@@ -1,0 +1,9 @@
+<!--
+ @author Juan Aguilar
+ @version 1.0.0, Wed Aug 9 2017
+ @since 0.0.1
+ Copyright (c) 2017 Fundación Ayesa
+-->
+<div #chips class="chips" materialize="material_chip" [materializeParams]="[autocompleteInit]" (chip.add)="add($event.detail.tag)"
+  (chip.delete)="delete($event.detail.tag)" [materializeActions]="chipsActions">
+</div>
